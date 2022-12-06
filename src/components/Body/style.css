@@ -1,0 +1,311 @@
+/* Inicio */
+
+.inicio{
+    background-color: #141414;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio .container-banner{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-img .profile-img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.container-info{
+    padding: 20px;
+}
+
+.container-info h1{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.container-info h2{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.container-info h2 span{
+    color: #ffd900;
+}
+
+.container-info .social-media{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.social-media a{
+    font-size: 25px;
+    line-height: 25px;
+    padding: 8px 10px;
+    border-bottom: 2px solid #141414;
+    transition: .3s;
+}
+
+.social-media a:hover{
+    border-bottom: 2px solid #ffd900;
+}
+
+
+/* About me */
+
+.aboutMe{
+    height: 100vh;
+    background-color: #383838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe .aboutMe-container{
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+.aboutMe .aboutMe-container h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    border-bottom: 2px #ffff solid;
+    text-align: right;
+}
+
+.aboutMe .aboutMe-container .aboutMe-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.aboutMe-left, .aboutMe-right{
+    padding: 20px;
+}
+
+.aboutMe-left{
+    border-right: 5px solid #fff;
+}
+
+.aboutMe-right{
+    border-left: 5px solid #fff;
+}
+
+.aboutMe-left span{
+    color: #ffd900;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.aboutMe-right h3{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aboutMe-right .intereses ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe-right .intereses li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background: #272727;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.aboutMe-right .intereses li:hover{
+    background-color: #ffd90098;
+}
+
+.intereses-i{
+    font-size: 28px;
+}
+
+.cvButton{
+    display: block;
+    margin: auto;
+    background-color: #272727;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.cvButton:hover{
+    background-color: #141414;
+}
+
+
+/* Skills */
+
+.skills{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-container{
+    width: 90%;
+    max-width: 1200px;
+}
+
+.skills-container h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    border-bottom: 2px #ffff solid;
+}
+
+.skills-container ul{
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    gap: 20px;
+    justify-content: center;
+}
+
+.skills-container ul li{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #272727;
+    text-align: center;
+    transition: .3s;
+}
+
+.skills-container ul li:hover{
+    border: 3px solid #ffff;
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.skills-container ul li span{
+    font-weight: 500;
+    font-size: 14px;
+    margin: auto;
+}
+
+.skills-container ul li .skills-ico{
+    display: block;
+    width: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* Portafolio */
+
+.portafolio{
+    height: 100vh;
+    background-color: #383838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Contacto */
+
+.contacto{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-container{
+    max-width: 1100px;
+    margin-top: 40px;
+}
+
+.contacto-container h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    border-bottom: 2px #fff solid;
+    color: #fff;
+}
+
+.contacto-container form .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.contacto-container form .grid .grid-group, .form-group{
+    padding: 20px;
+}
+
+.form-input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #141414;
+    outline: none;
+    background-color: #464646;
+    transition: .3s;
+}
+
+.form-input:hover{
+    background: #383838;
+    border: 1px solid #272727;
+}
+
+.form-input::placeholder{
+    color: #fff;
+}
+
+
+.form-area{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #141414;
+    outline: none;
+    background-color: #464646;
+    transition: .3s;
+}
+
+.form-area::placeholder{
+    color: #fff;
+}
+
+.form-area:hover{
+    background: #383838;
+    border: 1px solid #272727;
+}
+
+.btnSubmit{
+    display: block;
+    background-color: #ffd900;
+    color: #141414;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnSubmit:hover{
+    background-color: #383838;
+    color: #fff;
+}
