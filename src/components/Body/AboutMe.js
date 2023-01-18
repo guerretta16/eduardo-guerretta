@@ -3,15 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGamepad, faFutbol, faDumbbell, faDownload, faMugSaucer } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-const AboutMe = () => {
+const AboutMe = ({isEnglish}) => {
 
     const dowloadCV = () => {
-        fetch('Eduardo_Orellana_CV22.pdf').then(res => {
+        const fetchVal = isEnglish?"Eduardo_Orellana_CV2022-EN.pdf":"Eduardo_Orellana_CV22.pdf"
+        fetch(fetchVal).then(res => {
             res.blob().then(blob => {
                 const fileURL = window.URL.createObjectURL(blob);
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'Eduardo_Guerretta_CV22.pdf';
+                alink.download = fetchVal;
                 alink.click();
             })
         })
@@ -21,14 +22,14 @@ const AboutMe = () => {
     <section id='aboutMe' className='aboutMe'>
         <div className='aboutMe-container'>
             <h2>
-                Sobre mí
+                {isEnglish?"About me":"Sobre mí"}
             </h2>
             <div className='aboutMe-grid'>
                 <div className='aboutMe-left'>
-                    <span>Hola, soy Eduardo Guerretta.</span><br/><br/>Tengo 24 años y soy estudiante de Ingeniería de Sistemas Informáticos. A lo largo de mis estudios he trabajado en diferentes proyectos que me han permitido aprender y mejorar mis habilidades como desarrollador web.<br/><br/>Soy una persona optimista, colaborativa y dispuesta a dar todo de si para mejorar.
+                    <span>{isEnglish?"Hi, i'm Eduardo Guerretta":"Hola, soy Eduardo Guerretta."}</span><br/><br/>I'm 24 years old and i'm an Enginnering of Informatic Systems student. Throughout my studies I've worked on different projects that have allowed me to learn and improve my skills as a web developer<br/><br/>I'm a optimistic, collavorative person, and i'm willing to give my all to improve.
                     <br/><br/>    
                     <button className='cvButton' type='button' onClick={dowloadCV}>
-                        Descargar CV 
+                        {isEnglish?"Download CV":"Descargar CV"} 
                         <FontAwesomeIcon icon={faDownload} />
                     </button>
                 </div>
@@ -38,19 +39,19 @@ const AboutMe = () => {
                         <ul>
                             <li>
                                 <FontAwesomeIcon className='intereses-i' icon={faGamepad} />
-                                <span>Juegos</span>
+                                <span>{!isEnglish?"Juegos":"Games"}</span>
                             </li>
                             <li>
                                 <FontAwesomeIcon className='intereses-i' icon={faFutbol} />
-                                <span>Fútbol</span>
+                                <span>{!isEnglish?"Fútbol":"Soccer"}</span>
                             </li>
                             <li>
                                 <FontAwesomeIcon className='intereses-i' icon={faYoutube} />
-                                <span>Vídeos</span>
+                                <span>{!isEnglish?"Vídeos":"Videos"}</span>
                             </li>
                             <li>
                                 <FontAwesomeIcon className='intereses-i' icon={faMugSaucer} />
-                                <span>Café</span>
+                                <span>{!isEnglish?"Café":"Coffee"}</span>
                             </li>
                         </ul>
                     </div>

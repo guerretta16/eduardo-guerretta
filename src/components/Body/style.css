@@ -18,8 +18,9 @@
 }
 
 .container-img .profile-img{
-    width: 300px;
-    border-radius: 10px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #00dd8c09;
 }
 
 .container-info{
@@ -37,7 +38,7 @@
 }
 
 .container-info h2 span{
-    color: #ffd900;
+    color: #00dd8c;
 }
 
 .container-info .social-media{
@@ -55,7 +56,7 @@
 }
 
 .social-media a:hover{
-    border-bottom: 2px solid #ffd900;
+    border-bottom: 2px solid #00dd8c;
 }
 
 
@@ -99,7 +100,7 @@
 }
 
 .aboutMe-left span{
-    color: #ffd900;
+    color: #00dd8c;
     font-size: 25px;
     font-weight: 600;
 }
@@ -130,7 +131,7 @@
 }
 
 .aboutMe-right .intereses li:hover{
-    background-color: #ffd90098;
+    background-color: #00dd8c;
 }
 
 .intereses-i{
@@ -217,6 +218,57 @@
     justify-content: center;
 }
 
+.portafolio-container{
+    width: 90%;
+    max-width: 1200px;
+}
+
+.portafolio-container h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    border-bottom: 2px #ffff solid;
+    text-align: right;
+}
+
+.portafolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page-card{
+    width: 25%;
+    padding: 20px;
+    background-color: #14141488;
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s;
+}
+
+.page-card:hover{
+    background-color: #141414b6;
+}
+
+.page-img{
+    width: 230px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.page-info{
+    text-align: left;
+    padding: 20px;
+}
+
+.page-info h4{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.page-info p{
+    font-size: 13px;
+    color: #8a8a8a;
+}
 
 /* Contacto */
 
@@ -290,9 +342,15 @@
     border: 1px solid #272727;
 }
 
+.form-error{
+    color: #00dd8c;
+    margin: 5px;
+    font-size: 13px;
+}
+
 .btnSubmit{
     display: block;
-    background-color: #ffd900;
+    background-color: #00dd8c;
     color: #141414;
     padding: 10px 20px;
     border-radius: 5px;
@@ -308,4 +366,40 @@
 .btnSubmit:hover{
     background-color: #383838;
     color: #fff;
+}
+
+.switch-idiom{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.switch-btn{
+    padding: 5px 10px;
+    background-color: #272727;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.active{
+    background: #00dd8c;
+    color: #141414;
+}
+
+@media screen and (max-width:756px) {
+
+    *{
+        text-align: center;
+    }
+
+    .inicio .container-banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .inicio{
+        margin-top: 10vh;
+        min-height: 100vh;
+    }
 }

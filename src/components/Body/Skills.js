@@ -9,7 +9,7 @@ import tailIco from '../../assets/skills/tail-ico.png';
 import laravelIco from '../../assets/skills/laravel-ico.png';
 import mysqlIco from '../../assets/skills/mysql-ico.png';
 
-const Skills = () => {
+const Skills = ({isEnlgish}) => {
   return (
     <section id='skills' className='skills'>
         <div className='skills-container'>

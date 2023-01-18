@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../assets/img/me.jpg";
+import profile from "../../assets/img/perfil.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -7,7 +7,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Inicio = () => {
+const Inicio = ({isEnglish}) => {
   return (
     <section id="inicio" className="inicio">
       <div className="container-banner">
@@ -16,7 +16,10 @@ const Inicio = () => {
         </div>
         <div className="container-info">
           <h1>Eduardo Guerretta</h1>
-          <h2>Estudiante Universitario - <span>Desarrollador Web Jr</span></h2>
+          <h2>
+            {isEnglish?"University Student":"Estudiante Universitario"}{" - "} 
+            <span>{isEnglish?"Web Developer Jr":"Desarrollador Web Jr"}</span>
+          </h2>
           <div className="social-media">
             <a href="https://www.facebook.com/eduardo1515/" target="_blank">
               <FontAwesomeIcon icon={faFacebook} />
