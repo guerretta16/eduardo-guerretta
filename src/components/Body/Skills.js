@@ -9,11 +9,11 @@ import tailIco from '../../assets/skills/tail-ico.png';
 import laravelIco from '../../assets/skills/laravel-ico.png';
 import mysqlIco from '../../assets/skills/mysql-ico.png';
 
-const Skills = ({isEnlgish}) => {
+const Skills = ({isEnglish}) => {
   return (
     <section id='skills' className='skills'>
         <div className='skills-container'>
-            <h2>{isEnlgish?"Skills":"Habilidades"}</h2>
+            <h2>{isEnglish?"Skills":"Habilidades"}</h2>
             <ul>
                 <li>
                     <img className='skills-ico' src={htmlIco} alt="html"/>
