@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Header } from './components/Header';
 import { Body } from './components/Body';
+import { Footer } from './components/Footer';
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
       <Header isEnglish={isEnglish}/>
       {/* Body */}
       <Body isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+      {/* Footer */}
+      <Footer isEnglish={isEnglish}/>
     </div>
   );
 }

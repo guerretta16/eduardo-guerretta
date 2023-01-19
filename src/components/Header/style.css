@@ -62,7 +62,7 @@
 @media screen and (max-width:756px) {
 
     .Header{
-        position: fixed;
+        width: 100vw;
         padding: 5px 25px;
     }
 
