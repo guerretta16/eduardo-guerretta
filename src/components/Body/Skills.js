@@ -13,7 +13,7 @@ const Skills = ({isEnlgish}) => {
   return (
     <section id='skills' className='skills'>
         <div className='skills-container'>
-            <h2>Skills</h2>
+            <h2>{isEnlgish?"Skills":"Habilidades"}</h2>
             <ul>
                 <li>
                     <img className='skills-ico' src={htmlIco} alt="html"/>
